@@ -1,4 +1,4 @@
-export function isValidWalk(walk: string[]) {
+function isValidWalk(walk: string[]) {
     let startingPoint_x = 0;
     let startingPoint_y = 0;
     for (let i = 0; i < walk.length; i++) {
@@ -19,4 +19,7 @@ export function isValidWalk(walk: string[]) {
         return false;
     }
 }
+
+// console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']));
+// console.log(isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']));
 
